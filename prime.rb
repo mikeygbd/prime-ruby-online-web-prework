@@ -6,7 +6,7 @@ def prime?(n)
 end
 
 
-(2..n).each do |i|
+(2...n).each do |i|
   if n % i == 0
     return false
      end
