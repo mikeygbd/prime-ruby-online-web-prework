@@ -1,10 +1,10 @@
 # Add  code here!
 
 def prime?(n)
-if n < 2
-  return false
-if n == 2
-  return true 
+return false if n < 2
+
+return true if n == 2
+
 
 (2..n).each do |i|
   return false if n % i == 0
