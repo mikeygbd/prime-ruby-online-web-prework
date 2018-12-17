@@ -3,7 +3,8 @@
 def prime?(n)
 if n < 2
   return false
-end
+if n == 2
+  return true 
 
 (2..n).each do |i|
   return false if n % i == 0
