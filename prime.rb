@@ -1,13 +1,15 @@
 # Add  code here!
 
 def prime?(n)
-return false if n < 2
+ if n < 2
+   return false
+end
 
-return true if n == 2
 
-
-(2..n - 1).each do |i|
-  return false if n % i == 0
-    end
+(2..n).each do |i|
+  if n % i == 0
+    return false
+     end
+  end
     return true
 end
