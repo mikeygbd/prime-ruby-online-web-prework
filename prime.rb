@@ -1,8 +1,10 @@
 # Add  code here!
 
 def prime?(n)
-  for i in 2..(n - 1)
-    if (n % d) == 0
-      return false
+return false if n < 2
+return true if n == 2
+(2..n -1).each do |i|
+  return false if n % x == 0
     end
+    return true
 end
